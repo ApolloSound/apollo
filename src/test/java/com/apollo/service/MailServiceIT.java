@@ -1,6 +1,6 @@
 package com.apollo.service;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.config.Constants;
 import com.apollo.domain.User;
 import io.github.jhipster.config.JHipsterProperties;
@@ -40,7 +40,7 @@ import static org.mockito.Mockito.*;
 /**
  * Integration tests for {@link MailService}.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 public class MailServiceIT {
 
     private static String[] languages = {

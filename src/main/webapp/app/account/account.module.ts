@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { SallefySharedModule } from 'app/shared/shared.module';
+import { ApolloSharedModule } from 'app/shared/shared.module';
 
 import { PasswordStrengthBarComponent } from './password/password-strength-bar.component';
 import { RegisterComponent } from './register/register.component';
@@ -14,7 +14,7 @@ import { accountState } from './account.route';
 import { LoginComponent } from 'app/account/login/login.component';
 
 @NgModule({
-  imports: [SallefySharedModule, RouterModule.forChild(accountState)],
+  imports: [ApolloSharedModule, RouterModule.forChild(accountState)],
   declarations: [
     ActivateComponent,
     RegisterComponent,

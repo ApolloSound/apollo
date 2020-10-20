@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 
-import { SallefyTestModule } from '../../../test.module';
+import { ApolloTestModule } from '../../../test.module';
 import { ConfigurationComponent } from 'app/admin/configuration/configuration.component';
 import { Bean, ConfigurationService, PropertySource } from 'app/admin/configuration/configuration.service';
 
@@ -13,7 +13,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [SallefyTestModule],
+        imports: [ApolloTestModule],
         declarations: [ConfigurationComponent],
         providers: [ConfigurationService]
       })

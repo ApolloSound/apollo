@@ -1,6 +1,6 @@
 package com.apollo.web.rest.errors;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests {@link ExceptionTranslator} controller advice.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 public class ExceptionTranslatorIT {
 
     @Autowired

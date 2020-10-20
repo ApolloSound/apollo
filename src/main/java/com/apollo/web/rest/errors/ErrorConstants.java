@@ -16,7 +16,7 @@ public final class ErrorConstants {
     public static final String ERR_SERVICE_UNAVAILABLE = "error.server.notAvailable";
     public static final String ERR_GENERIC = "error.generic";
 
-    public static final String PROBLEM_BASE_URL = "http://sallefy.eu-west-3.elasticbeanstalk.com/problem";
+    public static final String PROBLEM_BASE_URL = "http://Apollo.eu-west-3.elasticbeanstalk.com/problem";
     public static final URI DEFAULT_TYPE = URI.create(PROBLEM_BASE_URL + "/problem-with-message");
     public static final URI FORBIDDEN_TYPE = URI.create(PROBLEM_BASE_URL + "/forbidden");
     public static final URI CONSTRAINT_VIOLATION_TYPE = URI.create(PROBLEM_BASE_URL + "/constraint-violation");

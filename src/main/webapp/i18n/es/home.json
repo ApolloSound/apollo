@@ -1,6 +1,6 @@
 {
   "home": {
-    "title": "¡Bienvenido a Sallefy!",
+    "title": "¡Bienvenido a Apollo!",
     "subtitle": "Esta es su página de inicio",
     "logged": {
       "message": "Está conectado como \"{{username}}\"."

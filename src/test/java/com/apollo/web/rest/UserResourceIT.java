@@ -1,6 +1,6 @@
 package com.apollo.web.rest;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.domain.*;
 import com.apollo.repository.FollowUserRepository;
 import com.apollo.repository.PlaylistRepository;
@@ -46,7 +46,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link UserResource} REST controller.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 public class UserResourceIT {
 
     private static final String DEFAULT_LOGIN = "johndoe";

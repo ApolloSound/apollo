@@ -1,6 +1,6 @@
 package com.apollo.security;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.domain.User;
 import com.apollo.repository.UserRepository;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThatExceptionOfType;
 /**
  * Integrations tests for {@link DomainUserDetailsService}.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 @Transactional
 public class DomainUserDetailsServiceIT {
 

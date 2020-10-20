@@ -91,7 +91,7 @@ will generate few files:
 
 ### Packaging as jar
 
-To build the final jar and optimize the Sallefy application for production, run:
+To build the final jar and optimize the Apollo application for production, run:
 
     ./mvnw -Pprod clean verify
 

@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 
-import { SallefyTestModule } from '../../../test.module';
+import { ApolloTestModule } from '../../../test.module';
 import { UserManagementDetailComponent } from 'app/admin/user-management/user-management-detail.component';
 import { User } from 'app/core/user/user.model';
 
@@ -18,7 +18,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [SallefyTestModule],
+        imports: [ApolloTestModule],
         declarations: [UserManagementDetailComponent],
         providers: [
           {

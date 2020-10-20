@@ -2,9 +2,9 @@
   "generator-jhipster": {
     "applicationType": "monolith",
     "gitCompany": "",
-    "baseName": "Sallefy",
-    "packageName": "com.sallefy",
-    "packageFolder": "com/sallefy",
+    "baseName": "Apollo",
+    "packageName": "com.Apollo",
+    "packageFolder": "com/Apollo",
     "serverPort": 8080,
     "serviceDiscoveryType": false,
     "authenticationType": "jwt",
@@ -39,5 +39,5 @@
   },
   "git-provider": "GitHub",
   "git-company": "arnaugarcia",
-  "repository-name": "sallefy"
+  "repository-name": "Apollo"
 }

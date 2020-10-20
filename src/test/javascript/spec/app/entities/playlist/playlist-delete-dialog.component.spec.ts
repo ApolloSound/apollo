@@ -3,7 +3,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { of } from 'rxjs';
 import { JhiEventManager } from 'ng-jhipster';
 
-import { SallefyTestModule } from '../../../test.module';
+import { ApolloTestModule } from '../../../test.module';
 import { MockEventManager } from '../../../helpers/mock-event-manager.service';
 import { MockActiveModal } from '../../../helpers/mock-active-modal.service';
 import { PlaylistDeleteDialogComponent } from 'app/entities/playlist/playlist-delete-dialog.component';
@@ -19,7 +19,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [SallefyTestModule],
+        imports: [ApolloTestModule],
         declarations: [PlaylistDeleteDialogComponent]
       })
         .overrideTemplate(PlaylistDeleteDialogComponent, '')

@@ -5,7 +5,7 @@ import { of, Subject } from 'rxjs';
 import { LangChangeEvent, TranslateModule, TranslateService } from '@ngx-translate/core';
 
 import { SfMainComponent } from 'app/layouts/main/main.component';
-import { SallefyTestModule } from '../../../test.module';
+import { ApolloTestModule } from '../../../test.module';
 import { MockRouter } from '../../../helpers/mock-route.service';
 
 describe('Component Tests', () => {
@@ -19,7 +19,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [SallefyTestModule, TranslateModule.forRoot()],
+        imports: [ApolloTestModule, TranslateModule.forRoot()],
         declarations: [SfMainComponent],
         providers: [Title]
       })

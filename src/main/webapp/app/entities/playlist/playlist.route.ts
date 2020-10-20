@@ -39,7 +39,7 @@ export const playlistRoute: Routes = [
     component: PlaylistComponent,
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'sallefyApp.playlist.home.title'
+      pageTitle: 'ApolloApp.playlist.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -51,7 +51,7 @@ export const playlistRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'sallefyApp.playlist.home.title'
+      pageTitle: 'ApolloApp.playlist.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -63,7 +63,7 @@ export const playlistRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'sallefyApp.playlist.home.title'
+      pageTitle: 'ApolloApp.playlist.home.title'
     },
     canActivate: [UserRouteAccessService]
   },
@@ -75,7 +75,7 @@ export const playlistRoute: Routes = [
     },
     data: {
       authorities: ['ROLE_USER'],
-      pageTitle: 'sallefyApp.playlist.home.title'
+      pageTitle: 'ApolloApp.playlist.home.title'
     },
     canActivate: [UserRouteAccessService]
   }

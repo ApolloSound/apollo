@@ -1,6 +1,6 @@
 package com.apollo.web.rest;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.domain.Playlist;
 import com.apollo.domain.Track;
 import com.apollo.domain.User;
@@ -45,7 +45,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link PlaylistResource} REST controller.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 public class PlaylistResourceIT {
 
     private static final String DEFAULT_NAME = "AAAAAAAAAA";

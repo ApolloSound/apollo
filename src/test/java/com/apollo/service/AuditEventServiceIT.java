@@ -1,6 +1,6 @@
 package com.apollo.service;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.domain.PersistentAuditEvent;
 import com.apollo.repository.PersistenceAuditEventRepository;
 import io.github.jhipster.config.JHipsterProperties;
@@ -18,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for {@link AuditEventService}.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 @Transactional
 public class AuditEventServiceIT {
     @Autowired

@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 import { HttpHeaders, HttpResponse } from '@angular/common/http';
 
-import { SallefyTestModule } from '../../../test.module';
+import { ApolloTestModule } from '../../../test.module';
 import { PlaylistComponent } from 'app/entities/playlist/playlist.component';
 import { PlaylistService } from 'app/shared/services/playlist.service';
 import { Playlist } from 'app/shared/model/playlist.model';
@@ -15,7 +15,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [SallefyTestModule],
+        imports: [ApolloTestModule],
         declarations: [PlaylistComponent],
         providers: []
       })

@@ -3,7 +3,7 @@ import { HttpResponse } from '@angular/common/http';
 import { FormBuilder } from '@angular/forms';
 import { of } from 'rxjs';
 
-import { SallefyTestModule } from '../../../test.module';
+import { ApolloTestModule } from '../../../test.module';
 import { PlaylistUpdateComponent } from 'app/entities/playlist/playlist-update.component';
 import { PlaylistService } from 'app/shared/services/playlist.service';
 import { Playlist } from 'app/shared/model/playlist.model';
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [SallefyTestModule],
+        imports: [ApolloTestModule],
         declarations: [PlaylistUpdateComponent],
         providers: [FormBuilder]
       })

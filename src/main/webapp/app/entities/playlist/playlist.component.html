@@ -1,9 +1,9 @@
 <div>
     <h2 id="page-heading">
-        <span jhiTranslate="sallefyApp.playlist.home.title">Playlists</span>
+        <span jhiTranslate="ApolloApp.playlist.home.title">Playlists</span>
         <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-playlist" [routerLink]="['/playlist/new']">
             <fa-icon [icon]="'plus'"></fa-icon>
-            <span  jhiTranslate="sallefyApp.playlist.home.createLabel">
+            <span  jhiTranslate="ApolloApp.playlist.home.createLabel">
             Create a new Playlist
             </span>
         </button>
@@ -12,25 +12,25 @@
     <sf-alert></sf-alert>
     <br/>
     <div class="alert alert-warning" *ngIf="playlists?.length === 0">
-        <span jhiTranslate="sallefyApp.playlist.home.notFound">No playlists found</span>
+        <span jhiTranslate="ApolloApp.playlist.home.notFound">No playlists found</span>
     </div>
     <div class="table-responsive" *ngIf="playlists?.length > 0">
         <table class="table table-striped" aria-describedby="page-heading">
             <thead>
             <tr>
             <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.name">Name</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.collaborative">Collaborative</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.description">Description</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.primaryColor">Primary Color</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.cover">Cover</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.thumbnail">Thumbnail</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.publicAccessible">Public Accessible</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.numberSongs">Number Songs</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.followers">Followers</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.rating">Rating</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.user">User</span></th>
-            <th scope="col" ><span jhiTranslate="sallefyApp.playlist.track">Track</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.name">Name</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.collaborative">Collaborative</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.description">Description</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.primaryColor">Primary Color</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.cover">Cover</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.thumbnail">Thumbnail</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.publicAccessible">Public Accessible</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.numberSongs">Number Songs</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.followers">Followers</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.rating">Rating</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.user">User</span></th>
+            <th scope="col" ><span jhiTranslate="ApolloApp.playlist.track">Track</span></th>
             <th scope="col"></th>
             </tr>
             </thead>

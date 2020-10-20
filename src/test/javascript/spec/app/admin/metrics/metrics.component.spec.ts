@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 
-import { SallefyTestModule } from '../../../test.module';
+import { ApolloTestModule } from '../../../test.module';
 import { SfMetricsComponent } from 'app/admin/metrics/metrics.component';
 import { SfMetricsService } from 'app/admin/metrics/metrics.service';
 
@@ -13,7 +13,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [SallefyTestModule],
+        imports: [ApolloTestModule],
         declarations: [SfMetricsComponent]
       })
         .overrideTemplate(SfMetricsComponent, '')

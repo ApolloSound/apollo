@@ -44,4 +44,4 @@ const LAYOUT_ROUTES = [navbarRoute, ...errorRoute];
   ],
   exports: [RouterModule]
 })
-export class SallefyAppRoutingModule {}
+export class ApolloAppRoutingModule {}

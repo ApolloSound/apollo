@@ -1,6 +1,6 @@
 package com.apollo.repository;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.config.Constants;
 import com.apollo.config.audit.AuditEventConverter;
 import com.apollo.domain.PersistentAuditEvent;
@@ -27,7 +27,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for {@link CustomAuditEventRepository}.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 @Transactional
 public class CustomAuditEventRepositoryIT {
 

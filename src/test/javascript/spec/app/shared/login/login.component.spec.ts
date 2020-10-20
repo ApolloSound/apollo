@@ -5,7 +5,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 import { LoginService } from 'app/core/login/login.service';
 import { LoginComponent } from 'app/account/login/login.component';
-import { SallefyTestModule } from '../../../test.module';
+import { ApolloTestModule } from '../../../test.module';
 import { MockLoginService } from '../../../helpers/mock-login.service';
 import { MockRouter } from '../../../helpers/mock-route.service';
 import { MockActiveModal } from '../../../helpers/mock-active-modal.service';
@@ -20,7 +20,7 @@ describe('Component Tests', () => {
 
     beforeEach(async(() => {
       TestBed.configureTestingModule({
-        imports: [SallefyTestModule],
+        imports: [ApolloTestModule],
         declarations: [LoginComponent],
         providers: [
           FormBuilder,

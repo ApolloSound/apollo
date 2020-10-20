@@ -20,18 +20,18 @@ import java.util.Collection;
 
 @SpringBootApplication
 @EnableConfigurationProperties({LiquibaseProperties.class, ApplicationProperties.class})
-public class SallefyApp implements InitializingBean {
+public class ApolloApp implements InitializingBean {
 
-    private static final Logger log = LoggerFactory.getLogger(SallefyApp.class);
+    private static final Logger log = LoggerFactory.getLogger(ApolloApp.class);
 
     private final Environment env;
 
-    public SallefyApp(Environment env) {
+    public ApolloApp(Environment env) {
         this.env = env;
     }
 
     /**
-     * Initializes Sallefy.
+     * Initializes Apollo.
      * <p>
      * Spring profiles can be configured with a program argument --spring.profiles.active=your-active-profile
      * <p>
@@ -56,7 +56,7 @@ public class SallefyApp implements InitializingBean {
      * @param args the command line arguments.
      */
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(SallefyApp.class);
+        SpringApplication app = new SpringApplication(ApolloApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
         logApplicationStartup(env);

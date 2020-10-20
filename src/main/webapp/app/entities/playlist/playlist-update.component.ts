@@ -96,7 +96,7 @@ export class PlaylistUpdateComponent implements OnInit {
   setFileData(event: Event, field: string, isImage: boolean): void {
     this.dataUtils.loadFileToForm(event, this.editForm, field, isImage).subscribe(null, (err: JhiFileLoadError) => {
       this.eventManager.broadcast(
-        new JhiEventWithContent<AlertError>('sallefyApp.error', { ...err, key: 'error.file.' + err.key })
+        new JhiEventWithContent<AlertError>('ApolloApp.error', { ...err, key: 'error.file.' + err.key })
       );
     });
   }

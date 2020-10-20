@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { of } from 'rxjs';
 import { JhiDataUtils } from 'ng-jhipster';
 
-import { SallefyTestModule } from '../../../test.module';
+import { ApolloTestModule } from '../../../test.module';
 import { PlaylistDetailComponent } from 'app/entities/playlist/playlist-detail.component';
 import { Playlist } from 'app/shared/model/playlist.model';
 
@@ -16,7 +16,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       TestBed.configureTestingModule({
-        imports: [SallefyTestModule],
+        imports: [ApolloTestModule],
         declarations: [PlaylistDetailComponent],
         providers: [{ provide: ActivatedRoute, useValue: route }]
       })

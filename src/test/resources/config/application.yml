@@ -15,10 +15,10 @@
 
 spring:
   application:
-    name: Sallefy
+    name: Apollo
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:mem:Sallefy;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:Apollo;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     name:
     username:
     password:
@@ -61,13 +61,13 @@ spring:
       enabled: false
   task:
     execution:
-      thread-name-prefix: sallefy-task-
+      thread-name-prefix: Apollo-task-
       pool:
         core-size: 1
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: sallefy-scheduling-
+      thread-name-prefix: Apollo-scheduling-
       pool:
         size: 1
   thymeleaf:
@@ -85,7 +85,7 @@ server:
 
 jhipster:
   clientApp:
-    name: 'sallefyApp'
+    name: 'ApolloApp'
   logging:
     # To test json console appender
     use-json-format: true # By default, logs are in Json format

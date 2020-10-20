@@ -24,13 +24,13 @@ describe('Playlist e2e test', () => {
     await navBarPage.goToEntity('playlist');
     playlistComponentsPage = new PlaylistComponentsPage();
     await browser.wait(ec.visibilityOf(playlistComponentsPage.title), 5000);
-    expect(await playlistComponentsPage.getTitle()).to.eq('sallefyApp.playlist.home.title');
+    expect(await playlistComponentsPage.getTitle()).to.eq('ApolloApp.playlist.home.title');
   });
 
   it('should load create Playlist page', async () => {
     await playlistComponentsPage.clickOnCreateButton();
     playlistUpdatePage = new PlaylistUpdatePage();
-    expect(await playlistUpdatePage.getPageTitle()).to.eq('sallefyApp.playlist.home.createOrEditLabel');
+    expect(await playlistUpdatePage.getPageTitle()).to.eq('ApolloApp.playlist.home.createOrEditLabel');
     await playlistUpdatePage.cancel();
   });
 
@@ -86,7 +86,7 @@ describe('Playlist e2e test', () => {
 
         playlistDeleteDialog = new PlaylistDeleteDialog();
         expect(await playlistDeleteDialog.getDialogTitle())
-            .to.eq('sallefyApp.playlist.delete.question');
+            .to.eq('ApolloApp.playlist.delete.question');
         await playlistDeleteDialog.clickOnConfirmButton();
 
         expect(await playlistComponentsPage.countDeleteButtons()).to.eq(nbButtonsBeforeDelete - 1);

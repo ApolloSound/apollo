@@ -1,7 +1,7 @@
 {
-  "name": "sallefy",
+  "name": "Apollo",
   "version": "0.2.4-BETA",
-  "description": "Description for Sallefy",
+  "description": "Description for Apollo",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [

@@ -1,7 +1,7 @@
 package com.apollo.web.rest;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.domain.Track;
 import com.apollo.domain.User;
 import com.apollo.repository.PlaybackRepository;
@@ -36,7 +36,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link TrackResource} play REST endpoint.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 public class PlayResourceIT {
 
     private final static Double LATITUDE = 41.357721;

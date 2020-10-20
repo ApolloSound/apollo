@@ -1,6 +1,6 @@
 package com.apollo.web.rest;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.config.audit.AuditEventConverter;
 import com.apollo.domain.PersistentAuditEvent;
 import com.apollo.repository.PersistenceAuditEventRepository;
@@ -30,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link AuditResource} REST controller.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 @Transactional
 public class AuditResourceIT {
 

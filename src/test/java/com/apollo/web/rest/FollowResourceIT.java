@@ -1,6 +1,6 @@
 package com.apollo.web.rest;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.domain.User;
 import com.apollo.repository.UserRepository;
 import com.apollo.service.FollowService;
@@ -35,7 +35,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 public class FollowResourceIT {
 
     @Autowired

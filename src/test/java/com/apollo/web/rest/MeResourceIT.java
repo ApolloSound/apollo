@@ -1,6 +1,6 @@
 package com.apollo.web.rest;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.domain.FollowUser;
 import com.apollo.domain.Playlist;
 import com.apollo.domain.Track;
@@ -38,7 +38,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /**
  * Integration tests for the {@link TrackResource} REST controller.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 public class MeResourceIT {
 
     @Autowired

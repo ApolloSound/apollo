@@ -2,7 +2,7 @@
 <databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.7.xsd">
-    <changeSet author="sallefy" id="1570784513713-1">
+    <changeSet author="Apollo" id="1570784513713-1">
         <addColumn tableName="playback">
             <column name="agent" type="varchar(255)"/>
         </addColumn>

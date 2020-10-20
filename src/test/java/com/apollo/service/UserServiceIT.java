@@ -1,6 +1,6 @@
 package com.apollo.service;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.config.Constants;
 import com.apollo.domain.User;
 import com.apollo.repository.UserRepository;
@@ -34,7 +34,7 @@ import static org.springframework.data.domain.Pageable.unpaged;
 /**
  * Integration tests for {@link UserService}.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 @Transactional
 public class UserServiceIT {
 
@@ -57,7 +57,7 @@ public class UserServiceIT {
     private UserService userService;
 
     /**
-     * This repository is mocked in the com.sallefy.repository.search.UserSearchRepositoryMockConfiguration test package.
+     * This repository is mocked in the com.Apollo.repository.search.UserSearchRepositoryMockConfiguration test package.
      *
      * @see com.apollo.repository.search.UserSearchRepositoryMockConfiguration
      */

@@ -1,6 +1,6 @@
 package com.apollo.cucumber;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import io.cucumber.java.Before;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
@@ -8,7 +8,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 @SpringBootTest
 @WebAppConfiguration
-@ContextConfiguration(classes = SallefyApp.class)
+@ContextConfiguration(classes = ApolloApp.class)
 public class CucumberContextConfiguration {
 
     @Before

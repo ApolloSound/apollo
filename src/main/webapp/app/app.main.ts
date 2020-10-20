@@ -1,6 +1,6 @@
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { ProdConfig } from './blocks/config/prod.config';
-import { SallefyAppModule } from './app.module';
+import { ApolloAppModule } from './app.module';
 
 ProdConfig();
 
@@ -9,7 +9,7 @@ if (module['hot']) {
 }
 
 platformBrowserDynamic()
-  .bootstrapModule(SallefyAppModule, { preserveWhitespaces: true })
+  .bootstrapModule(ApolloAppModule, { preserveWhitespaces: true })
   // eslint-disable-next-line no-console
   .then(() => console.log('Application started'))
   .catch(err => console.error(err));

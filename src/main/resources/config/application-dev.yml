@@ -17,7 +17,7 @@ logging:
   level:
     ROOT: DEBUG
     io.github.jhipster: DEBUG
-    com.sallefy: DEBUG
+    com.Apollo: DEBUG
 
 spring:
   profiles:
@@ -37,9 +37,9 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://${SALLEFY_DB_HOST}:${SALLEFY_DB_PORT}/${SALLEFY_DB_NAME}?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
-    username: ${SALLEFY_DB_USER}
-    password: ${SALLEFY_DB_PASSWORD}
+    url: jdbc:mysql://${Apollo_DB_HOST}:${Apollo_DB_PORT}/${Apollo_DB_NAME}?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: ${Apollo_DB_USER}
+    password: ${Apollo_DB_PASSWORD}
     hikari:
       poolName: Hikari
       auto-commit: false

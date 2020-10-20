@@ -76,7 +76,7 @@ import { fontAwesomeIcons } from './icons/font-awesome-icons';
     }
   ]
 })
-export class SallefyCoreModule {
+export class ApolloCoreModule {
   constructor(iconLibrary: FaIconLibrary, dpConfig: NgbDatepickerConfig, languageService: JhiLanguageService) {
     registerLocaleData(locale);
     iconLibrary.addIconPacks(fas);

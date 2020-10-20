@@ -26,4 +26,4 @@ import { TrackBaseComponent } from 'app/shared/component/track-base.component';
   ],
   declarations: [TrackBaseComponent]
 })
-export class SallefySharedLibsModule {}
+export class ApolloSharedLibsModule {}

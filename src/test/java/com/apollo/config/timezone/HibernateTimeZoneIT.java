@@ -1,6 +1,6 @@
 package com.apollo.config.timezone;
 
-import com.apollo.SallefyApp;
+import com.apollo.ApolloApp;
 import com.apollo.repository.timezone.DateTimeWrapper;
 import com.apollo.repository.timezone.DateTimeWrapperRepository;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * Integration tests for the UTC Hibernate configuration.
  */
-@SpringBootTest(classes = SallefyApp.class)
+@SpringBootTest(classes = ApolloApp.class)
 public class HibernateTimeZoneIT {
 
     @Autowired

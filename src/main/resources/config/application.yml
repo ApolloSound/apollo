@@ -56,7 +56,7 @@ management:
 
 spring:
   application:
-    name: Sallefy
+    name: Apollo
   profiles:
     # The commented value for `active` can be replaced with valid Spring profiles to load.
     # Otherwise, it will be filled in by maven when building the JAR file
@@ -88,13 +88,13 @@ spring:
       enabled: false
   task:
     execution:
-      thread-name-prefix: sallefy-task-
+      thread-name-prefix: Apollo-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: sallefy-scheduling-
+      thread-name-prefix: Apollo-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -121,7 +121,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'sallefyApp'
+    name: 'ApolloApp'
   cors:
     allowed-origins: '*'
     allowed-methods: '*'
@@ -130,15 +130,15 @@ jhipster:
     allow-credentials: true
     max-age: 1800
   mail:
-    from: Sallefy@localhost
+    from: Apollo@localhost
   swagger:
     default-include-pattern: /api/.*
-    title: Sallefy API
-    description: Through the Sallefy Web API, external applications retrieve Sallefy content such as album, playlists, tracks... To access user-related data through the Web API, an application must be authorized by the user to access that particular information.
+    title: Apollo API
+    description: Through the Apollo Web API, external applications retrieve Apollo content such as album, playlists, tracks... To access user-related data through the Web API, an application must be authorized by the user to access that particular information.
     version: 0.2.4
     terms-of-service-url:
     license: MIT
-    license-url: https://raw.githubusercontent.com/arnaugarcia/sallefy/master/LICENSE
+    license-url: https://raw.githubusercontent.com/arnaugarcia/Apollo/master/LICENSE
     contact-email: arnau.gg@students.salle.url.edu
     contact-name: Arnau Garcia Gallego
     contact-url: https://arnaugarcia.com

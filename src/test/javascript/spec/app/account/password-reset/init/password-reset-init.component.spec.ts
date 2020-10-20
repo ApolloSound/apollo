@@ -3,7 +3,7 @@ import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import { FormBuilder } from '@angular/forms';
 import { of, throwError } from 'rxjs';
 
-import { SallefyTestModule } from '../../../../test.module';
+import { ApolloTestModule } from '../../../../test.module';
 import { PasswordResetInitComponent } from 'app/account/password-reset/init/password-reset-init.component';
 import { PasswordResetInitService } from 'app/account/password-reset/init/password-reset-init.service';
 import { EMAIL_NOT_FOUND_TYPE } from 'app/shared/constants/error.constants';
@@ -15,7 +15,7 @@ describe('Component Tests', () => {
 
     beforeEach(() => {
       fixture = TestBed.configureTestingModule({
-        imports: [SallefyTestModule],
+        imports: [ApolloTestModule],
         declarations: [PasswordResetInitComponent],
         providers: [FormBuilder]
       })

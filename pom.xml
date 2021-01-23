@@ -6,7 +6,7 @@
     <groupId>com.Apollo</groupId>
     <artifactId>Apollo</artifactId>
     <version>0.2.4-BETA</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <name>Apollo</name>
 
     <repositories>

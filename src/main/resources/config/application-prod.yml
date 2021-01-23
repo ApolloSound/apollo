@@ -31,9 +31,9 @@ spring:
       enabled: false
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://${Apollo_DB_HOST}:${Apollo_DB_PORT}/${Apollo_DB_NAME}?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
-    username: ${Apollo_DB_USER}
-    password: ${Apollo_DB_PASSWORD}
+    url: jdbc:mysql://${APOLLO_DB_HOST}:${APOLLO_DB_PORT}/${APOLLO_DB_SCHEMA}?useUnicode=true&characterEncoding=utf8&useSSL=false&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: ${APOLLO_DB_USER}
+    password: ${APOLLO_DB_PASSWORD}
     hikari:
       poolName: Hikari
       auto-commit: false
